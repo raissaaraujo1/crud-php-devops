@@ -1,3 +1,3 @@
 <?php
-echo "Código PHP";
+echo "Código PHP! Atualizado";
 ?>
