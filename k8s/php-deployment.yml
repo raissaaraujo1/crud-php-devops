@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: php
+  template:
+    metadata:
+      labels:
+        app: php
+    spec:
+      containers:
+        - name: php
+          image: raissa520/crud-php:latest
+          ports:
+            - containerPort: 80
